@@ -1,0 +1,28 @@
+
+modLoader="javafml"
+loaderVersion="[55,)"
+license="MIT"
+
+[[mods]]
+modId="amjad_fps_boost"
+version="1.0.0"
+displayName="AMJAD FPS BOOST PRO"
+authors="Amjad"
+description='''
+Advanced Minecraft performance optimization.
+Designed to improve gameplay smoothness.
+'''
+
+[[dependencies.amjad_fps_boost]]
+modId="forge"
+mandatory=true
+versionRange="[55,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.amjad_fps_boost]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.21.5,1.22)"
+ordering="NONE"
+side="BOTH"
