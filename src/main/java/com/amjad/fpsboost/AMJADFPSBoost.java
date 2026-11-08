@@ -1,6 +1,7 @@
 package com.amjad.fpsboost;
 
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.ModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,6 +12,11 @@ public class AMJADFPSBoost {
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     public AMJADFPSBoost() {
+        ModLoadingContext.get().registerConfig(
+            net.minecraftforge.fml.config.ModConfig.Type.CLIENT,
+            ModConfig.SPEC
+        );
+
         LOGGER.info("AMJAD FPS BOOST PRO loaded!");
     }
 }
